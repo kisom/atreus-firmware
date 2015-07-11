@@ -36,7 +36,7 @@ jsonlayout: atreus.el $(LAYOUT).json
 
 # remove build files
 clean:
-	-rm -f $(TARGET) $(TARGET).hex *.o
+	-rm -f $(TARGET) $(TARGET).hex *.o layout.h
 
 layout.h: $(LAYOUT_DEPENDS)
 	-cp -n layout_qwerty.h layout.h
